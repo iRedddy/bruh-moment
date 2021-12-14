@@ -10,13 +10,13 @@ for _,player in pairs(game.Players:GetPlayers()) do
        end
        local part = F3X.new("Part", workspace)
        part.CanCollide = false
-       part.Size = Vector3.new(3, 4, 3)
+       part.Size = Vector3.new(9, 9, 9)
        part.CFrame = player.Character.HumanoidRootPart.CFrame * CFrame.new(0, 9, 0)
        wait()
        part:WeldTo(player.Character.HumanoidRootPart)
        local mesh = part:AddMesh()
        mesh.MeshId = "rbxassetid://6382052801"
        mesh.TextureId = "rbxassetid://6382052846"
-       mesh.Scale = Vector3.new(5, 5, 5)
+       mesh.Scale = Vector3.new(9, 9, 9)
    end)
 end
